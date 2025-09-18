@@ -47,22 +47,22 @@ python --version
 2. Run the converter:
 ```bash
 # Convert all conversations using defaults
-python convert_conversations.py
+python convert.py
 
 # Specify input file and output directory
-python convert_conversations.py conversations.json my_claude_notes
+python convert.py conversations.json my_claude_notes
 
 # Convert only first 100 conversations
-python convert_conversations.py conversations.json output 100
+python convert.py conversations.json output 100
 
 # Show help
-python convert_conversations.py --help
+python convert.py --help
 ```
 
 ### Command Line Arguments
 
 ```
-python convert_conversations.py [INPUT_FILE] [OUTPUT_DIR] [LIMIT]
+python convert.py [INPUT_FILE] [OUTPUT_DIR] [LIMIT]
 ```
 
 | Argument | Description | Default |
@@ -75,16 +75,16 @@ python convert_conversations.py [INPUT_FILE] [OUTPUT_DIR] [LIMIT]
 
 ```bash
 # Use all defaults (input: conversations.json, output: output/)
-python convert_conversations.py
+python convert.py
 
 # Custom input and output paths
-python convert_conversations.py ~/Downloads/conversations.json ~/Documents/claude-notes
+python convert.py ~/Downloads/conversations.json ~/Documents/claude-notes
 
 # Process only first 50 conversations for testing
-python convert_conversations.py conversations.json test_output 50
+python convert.py conversations.json test_output 50
 
 # Convert from a different location
-python convert_conversations.py /path/to/claude_export.json /path/to/notes
+python convert.py /path/to/claude_export.json /path/to/notes
 ```
 
 3. Import to your note-taking app:
